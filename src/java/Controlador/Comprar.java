@@ -65,17 +65,26 @@ public class Comprar extends HttpServlet {
                   
                   int stocke = leer.getStock() - NuevaCantidad;
                   
-                  leer.setStock(stocke);
-                  
-                  
-                  
+                 leer.setStock(stocke);
+ 
                   if(conec.verificador(code)>0){
                       
-                   cnnpro.update(new ProductoClass(stocke));
-                   com.create(new CompraClass(fecha, NuevaCantidad, rut_cli, cod_pro)); 
-                   String proceso = "Compra exitosa";
-                   request.getSession().setAttribute("myProcess", proceso);
-                   request.getRequestDispatcher("ProcesoExistoso.jsp").forward(request, response); 
+                      if(leer.getStock()>=0){
+                      
+                          cnnpro.update(leer);
+                          com.create(new CompraClass(fecha, NuevaCantidad, rut_cli, cod_pro)); 
+                          String proceso = "Compra exitosa";
+                          request.getSession().setAttribute("myProcess", proceso);
+                          request.getRequestDispatcher("ProcesoExistoso.jsp").forward(request, response); 
+                      
+                      }
+                      else{
+                        error = "No hay productos";
+                       request.getSession().setAttribute("Myerror", error);
+                       request.getRequestDispatcher("error.jsp").forward(request, response);
+                      
+                      }
+                  
                 
                 }
                 else{

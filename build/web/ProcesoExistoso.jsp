@@ -51,10 +51,11 @@
         %>   
                 
          <span>Volver <a href="index.jsp"> Inicio</a></span> </br>
-        <span>Volver a home <a href="admin.jsp"> Principal </a></span></br>
+        <span>Volver a home <a href="admin.jsp"> admin </a></span></br>
         <span>Volver a home <a href="indexdelcliente.jsp">cliente</a></span> </br>
-        <span>Mostrar <a href="mostrarp.do">clientes</a></span></br>
-        <span>Mostrar <a href="mostrarc.do">productos</a></span></br>         
+        <span>Mostrar <a href="mostrarp.do">Productos</a></span></br>
+        <span>Mostrar <a href="mostrarc.do">Clientes</a></span></br>
+        <span>Mostrar <a href="mostrarv.do">Ventas</a></span></br>
             </div>
        
 

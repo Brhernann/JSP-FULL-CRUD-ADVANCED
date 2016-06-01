@@ -32,7 +32,7 @@
                 
             </div>
                      
-        </header>>
+        </header>
         
         <div class="row">
             

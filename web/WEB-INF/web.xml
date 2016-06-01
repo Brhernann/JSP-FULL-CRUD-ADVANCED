@@ -60,6 +60,14 @@
         <servlet-name>Comprar</servlet-name>
         <servlet-class>Controlador.Comprar</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Eliminarv</servlet-name>
+        <servlet-class>Controlador.Eliminarv</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Eliminarventa</servlet-name>
+        <servlet-class>Controlador.Eliminarventa</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Registrocliente</servlet-name>
         <url-pattern>/registrocliente.do</url-pattern>
@@ -119,6 +127,14 @@
     <servlet-mapping>
         <servlet-name>Comprar</servlet-name>
         <url-pattern>/comprar.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Eliminarv</servlet-name>
+        <url-pattern>/eliminarv</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Eliminarventa</servlet-name>
+        <url-pattern>/eliminarventa.do</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
