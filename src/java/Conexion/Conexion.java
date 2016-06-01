@@ -19,7 +19,7 @@ public class Conexion {
         
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            cnn = DriverManager.getConnection("jdbc:mysql://localhost:3306/libreria?zeroDateTimeBehavior=convertToNull","root", "");
+            cnn = DriverManager.getConnection("jdbc:mysql://localhost:3306/ventas?zeroDateTimeBehavior=convertToNull","root", "");
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(Conexion.class.getName()).log(Level.SEVERE, null, ex);
         } catch (SQLException ex) {
@@ -29,7 +29,7 @@ public class Conexion {
        
     }
     
-    public static Conexion SaberEstado(){
+    public synchronized static Conexion SaberEstado(){
         
         if (instance == null) {
             
