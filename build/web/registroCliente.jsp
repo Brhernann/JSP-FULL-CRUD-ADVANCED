@@ -13,26 +13,45 @@
         <link rel="stylesheet" href="css/bootstrap.min.css" />
 	<link rel="stylesheet" href="css/bootstrap-responsive.css" />
 	<link rel="stylesheet" href="css/signin.css" />
+        <link rel="stylesheet" href="css/estilos.css" />
         
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
     </head>
     <body>
         
+                     <header>
+         <div class="row">
+           <div class="col-lg-10"></div>
+           <div class="col-lg-2">
+               
+            <a href="admin.jsp">Admin</a>  <a href="LoginClient.jsp">LoginClient</a>   
+               
+           </div>
+           </div>
+           <div class="row">
+               
+               <div class="col-lg-4"></div>
+               <div class="col-lg-4">
+                 
+                   <h1><b>SOMOS  SUSHIPIANTE</b></br>
+                   <span class="small"><b>Nuevo cliente</b></span></h1>
+               </div>
+               <div class="col-lg-4"></div>
+               
+           </div>
+                     
+                     </header>
+            
+          
+
+        <script src="js/jquery.js">  </script>
+        <script src="js/bootstrap.min.js">  </script> 
+        
+        </br>
+        
         <div class="container">
-            
-            
-            <div class="row">
-                
-                <div class="col-lg-2"> </div>
-                <div class="col-lg-8"> 
-                <legend><h1>Registro de nuevo usuario</h1></legend></br>
-                </div>
-                <div class="col-lg-2"> </div>
-                
-            </div>
-            
-            <div class="row">
+  <div class="row">
                 
                 <div class="col-lg-3"> </div>
                 
